@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+       <xs:element name="presets">
+              <xs:complexType>
+                     <xs:sequence>
+                            <xs:element name="preset">
+                                   <xs:complexType>
+                                          <xs:sequence>
+                                                 <xs:element name="description" type="xs:string"></xs:element>
+                                                 <xs:element name="card" maxOccurs="unbounded" type="xs:string">
+                                                        <xs:complexType>
+                                                               <xs:attribute name="amount" type="xs:int"></xs:attribute>
+                                                           </xs:complexType>
+                                                    </xs:element>
+                                             </xs:sequence>
+                                          <xs:attribute name="name" type="xs:string"></xs:attribute>
+                                          <xs:attribute name="player" type="xs:int"></xs:attribute>
+                                      </xs:complexType>
+                               </xs:element>
+                        </xs:sequence>
+                 </xs:complexType>
+          </xs:element>
+   </xs:schema> 

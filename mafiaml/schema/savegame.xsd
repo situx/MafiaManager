@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+          <!-- XML Schema Generated from XML Document on Wed Jun 14 2017 00:17:30 GMT+0200 (CEST) -->
+          <!-- with XmlGrid.net Free Online Service http://xmlgrid.net -->
+       <xs:element name="SaveGame">
+              <xs:complexType>
+                     <xs:sequence>
+                            <xs:element name="gamefield">
+                                   <xs:complexType>
+                                          <xs:sequence>
+                                                 <xs:element name="field" maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                               <xs:attribute name="relId" type="xs:int"></xs:attribute>
+                                                               <xs:attribute name="charid" type="xs:int"></xs:attribute>
+                                                               <xs:attribute name="cardname" type="xs:string"></xs:attribute>
+                                                               <xs:attribute name="dead" type="xs:string"></xs:attribute>
+                                                               <xs:attribute name="player" type="xs:string"></xs:attribute>
+                                                           </xs:complexType>
+                                                    </xs:element>
+                                                 <xs:element name="notassigned">
+                                                        <xs:complexType>
+                                                               <xs:sequence>
+                                                                      <xs:element name="card" type="xs:string"></xs:element>
+                                                                  </xs:sequence>
+                                                           </xs:complexType>
+                                                    </xs:element>
+                                             </xs:sequence>
+                                      </xs:complexType>
+                               </xs:element>
+                            <xs:element name="extra"></xs:element>
+                        </xs:sequence>
+                     <xs:attribute name="date" type="xs:int"></xs:attribute>
+                     <xs:attribute name="round" type="xs:int"></xs:attribute>
+                     <xs:attribute name="counter" type="xs:int"></xs:attribute>
+                     <xs:attribute name="version" type="xs:int"></xs:attribute>
+                     <xs:attribute name="gameset" type="xs:string"></xs:attribute>
+                 </xs:complexType>
+          </xs:element>
+   </xs:schema> 
