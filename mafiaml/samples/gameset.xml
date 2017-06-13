@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<!--
+    LNDWAWeb
+       Copyright (C) 2016 Timo Homburg
+    This program is free software; you can redistribute it and/or modify
+      it under the terms of the GNU General Public License as published by
+      the Free Software Foundation; either version 3 of the License, or
+      (at your option) any later version.
+      This program is distributed in the hope that it will be useful,
+       but WITHOUT ANY WARRANTY; without even the implied warranty of
+       MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+       GNU General Public License for more details.
+        You should have received a copy of the GNU General Public License
+       along with this program; if not, write to the Free Software Foundation,
+       Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301  USA
+ -->
+
+<gameset gamesetid="56c7af97-9e68-4980-95d9-433933ff2326" title="Mafia" fromPlayers="0" toPlayers="0" img="de_mafia" backimg="back">
+    <introtext introtitle="Beginning of the night">The night falls. All players go to sleep.</introtext>
+    <outrotext outrotitle="End of the night">A new day begins</outrotext>
+     <group name="Mafiosi" gid="M" id="7000902e-499c-489c-a3c5-6a3dcd3ca621" icon="5e59e8af-709a-4ccd-be47-da2d8d32cc18" canwin="true">
+        <description>The Mafiosi win the game by killing all non-Mafiosi.</description>
+    </group>
+    <group name="Citizen" gid="C" id="ef3d3209-50cd-4f80-af94-0ef04384b35" icon="41c18f86-1d72-44e2-a3a6-7ce06626aac8" canwin="true">
+        <description>The citizens win if they can kill all Mafiosi.</description>
+    </group>
+<Karte cardid="87d0cb39-fd39-455a-9a85-2912f52addb4" name="Barkeeper" group="M" round="0" img=" " minamount="1" maxamount="1" position="2" position2="-1" extra="0" fixeddeath="0" nopoints="false" calleveryone="false" winsalone="false" winningalive="2" winningdead="1" balance="0">
+<description>The barkeeper can once prohibit an ability to be executed during the night. He wins along with the Mafiosi.</description>
+<abb active="true" amount="1" availablefrom="1" availableuntil="-1" probability="100" img="jailguard" everyround="true" concerns="1" mustuse="false" duration="1" killing="false" counterKilling="false" self="false">Choose victim</abb>
+    <actions>
+        <action id="1"  position="2" round="0" ondead="false" title="Choose victim">
+            <gamemaster>Note the character which cannot perform actions during the night.</gamemaster>
+            <player>Point out the victim</player>
+        </action>
+    </actions>
+</Karte>
+<Karte cardid="0bfed9e9-ce07-4c51-ab3d-efc71b185116" name="Jail Guard" group="B" round="0" img=" " minamount="1" maxamount="1" position="2" position2="-1" extra="0" fixeddeath="0" nopoints="false" calleveryone="false" winsalone="false" winningalive="2" winningdead="1" balance="0">
+<description>The jail guard emprisons one person every night. This person cannot be killed during the night and cannot use any of their abilities.</description>
+<abb active="true" amount="1" availablefrom="1" availableuntil="-1" probability="100" img="jailguard" everyround="true" concerns="1" mustuse="false" duration="1" killing="false" counterKilling="false" self="false">Choose prisoner</abb>
+    <actions>
+        <action id="1"  position="2" round="0" ondead="false" title="Choose prisoner">
+            <gamemaster>Note the prisoner or continue if no decision has been made.</gamemaster>
+            <player>Point out the prisoner</player>
+        </action>
+    </actions>
+</Karte>
+<Karte cardid="bad493d8-b73b-40a2-a201-57056406842a" name="Mafiosi" group="M" round="0" img=" " minamount="2" maxamount="-1" position="5" position2="-1" extra="0" fixeddeath="0" nopoints="false" calleveryone="false" winsalone="false" winningalive="2" winningdead="1" balance="0">
+<description>Die Mafiosi erwachen und suchen sich ein Opfer.</description>
+<abb active="true" amount="1" availablefrom="1" availableuntil="-1" probability="100" img="mafiosi" everyround="true" concerns="1" mustuse="false" duration="1" killing="true" counterKilling="false" self="false">Choose victim</abb>
+<description>The Mafiosi win if they can kill all citizens.</description>
+    <actions>
+        <action id="1"  position="3" round="0" ondead="false" title="Choose victim">
+            <gamemaster>Note the victim of the Mafiosi or continue if no decision could be made.</gamemaster>
+            <player>Point out the victim</player>
+        </action>
+    </actions>
+</Karte>    
+</gameset>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    LNDWAWeb
+       Copyright (C) 2016 Timo Homburg
+    This program is free software; you can redistribute it and/or modify
+      it under the terms of the GNU General Public License as published by
+      the Free Software Foundation; either version 3 of the License, or
+      (at your option) any later version.
+      This program is distributed in the hope that it will be useful,
+       but WITHOUT ANY WARRANTY; without even the implied warranty of
+       MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+       GNU General Public License for more details.
+        You should have received a copy of the GNU General Public License
+       along with this program; if not, write to the Free Software Foundation,
+       Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301  USA
+ -->
+
+<SaveGame date="1394494484281" round="1" counter="1" version="1.0" gameset="gameset">
+    <gamefield>
+        <field relId="0" charid="2" cardname="Mafiosi" dead="false" player="Player1" />
+        <field relId="1" charid="0" cardname="Barkeeper" dead="false" player="Player2" />
+        <field relId="2" charid="3" cardname="Doctor" dead="false" player="Player3" />
+        <field relId="3" charid="2" cardname="Mafiosi" dead="false" player="Player4" />
+        <field relId="4" charid="1" cardname="Seer" dead="false" player="Player5" />
+        <field relId="5" charid="-1" cardname="back" dead="false" player="Player6" />
+        <field relId="6" charid="4" cardname="Hunter" dead="false" player="Player7">
+            <overlay from="0" abb="0" duration="-1" />
+        </field>
+        <field relId="7" charid="5" cardname="Citizen" dead="false" player="Player8">
+            <overlay from="0" abb="0" duration="-1" />
+        </field>
+        <field relId="8" charid="-1" cardname="back" dead="false" player="Player9" />
+        <notassigned>
+            <card>Citizen</card>
+        </notassigned>
+    </gamefield>
+    <extra />
+</SaveGame>

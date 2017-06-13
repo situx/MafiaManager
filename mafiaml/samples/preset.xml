@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    LNDWAWeb
+       Copyright (C) 2016 Timo Homburg
+    This program is free software; you can redistribute it and/or modify
+      it under the terms of the GNU General Public License as published by
+      the Free Software Foundation; either version 3 of the License, or
+      (at your option) any later version.
+      This program is distributed in the hope that it will be useful,
+       but WITHOUT ANY WARRANTY; without even the implied warranty of
+       MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+       GNU General Public License for more details.
+        You should have received a copy of the GNU General Public License
+       along with this program; if not, write to the Free Software Foundation,
+       Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301  USA
+ -->
+
+<presets>
+    <preset name="Mafia Basic Set" player="9">
+        <description>Sample Set of Mafia Cards from 'Mafia Basic Set'</description>
+        <card amount="1">fd4f16e0-1170-4d7a-82ee-b0db1553d358</card>
+        <card amount="1">a682345e-dd38-484c-8363-9501124bfcb2</card>
+        <card amount="1">de8acc5a-87db-4f70-8bba-399234f84923</card>
+        <card amount="1">c69d27fd-5060-49fc-b571-0c9e91ee99c2</card>
+        <card amount="1">a30f3963-c830-4e86-94b5-42be64baf9bc</card>
+        <card amount="1">41c18f86-1d72-44e2-a3a6-7ce06626aac8</card>
+        <card amount="3">5e59e8af-709a-4ccd-be47-da2d8d32cc18</card>
+    </preset>
+</presets>
