@@ -16,16 +16,6 @@
  -->
 
 <items>
-  <item id="1" name="Hauptmannsorden"><description>Der Hauptmannsorden wird nach durchgeführter Wahl an den Hauptmann übergeben.</description></item>
-  <item id="2" name="Vagabundenbeutel"><description>No description yet.</description></item>
-  <item id="3" name="Der Rosenkranz des Beichtvaters"><description>No description yet.</description></item>
-  <item id="4" name="Die Hausschlüssel des Vogts"><description>No description yet.</description></item>
-  <item id="5" name="Das Brot des Bäckers"><description>No description yet.</description></item>
-  <item id="6" name="Der Trinkbecher des Wirts"><description>No description yet.</description></item>
-  <item id="7" name="Die Kuh des Bauern"><description>No description yet.</description></item>
-  <item id="8" name="Der Mörser des Quacksalbers"><description>No description yet.</description></item>
-  <item id="9" name="Das Wappen des Schlossherrn"><description>No description yet.</description></item>
-  <item id="10" name="Die Schulglocke der Lehrerin"><description>No description yet.</description></item>
-  <item id="11" name="Das Rasiermesser des Barbiers"><description>No description yet.</description></item>
-  <item id="12" name="Das Schutzamulett"><description>No description yet.</description></item>
+  <item id="1" name="Status of the captain"><description>Gives the player in possession the power of the team captain.</description></item>
+  <item id="2" name="Poison"><description>No description yet.</description></item>
 </items>
