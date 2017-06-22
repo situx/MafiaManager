@@ -2,7 +2,7 @@
 
 MafiaManager is an Android app and an accompanying web application for creating, managing, and playing roleplaying games that follow the ruleset of the popular game Mafia.
 
-MafiaManager provides the definition of an XML datastructure in which characters, items and events for the popular roleplaying game Mafia can be defined.
+MafiaManager provides the definition of MafiaML, an XML datastructure in which characters, items and events for the popular roleplaying game Mafia can be defined.
 This provides a unified XML standard for sharing Mafia decks among computers.
 A character deck displaying and manipulation software is provided as a web application.
 An Android app allows the loading of specified Mafia decks and provides and aid for the gamemaster to guide through the Mafia game.
