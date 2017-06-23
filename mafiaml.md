@@ -109,11 +109,23 @@ In the current version of MafiaML the following attributes have been defined:
 ### Items
 Items can be used by players of the game in order to gain privileges during the game. In essence items grant abilities temporarily or non-temporarily to characters and may or may not be unusable after their usage.
 ```xml
-  <item id="1" name="Hauptmannsorden"><description>Der Hauptmannsorden wird nach durchgeführter Wahl an den Hauptmann übergeben.</description></item>
+  <item id="1" name="Hauptmannsorden">
+  <description>Der Hauptmannsorden wird nach 
+  durchgeführter Wahl an den Hauptmann übergeben.</description>
+  </item>
   ```
 ### Events
 An event in Mafia occurs after a night has been terminated. It has a temporary of permanet effect on certain aspects of the game. Depending on the agreed rules, events occur at random or at the gamemasters' choice.
-
+- active: Indicates if the event is currently active
+- id: An id of the event
+- probability: The probability of an event being chosen
+- title: The title of the event
+- description: The description of the event
+```xml
+   <event active="false" id="1" probability="100" title="Event">
+   <description>Description of the event</description>
+   </event>
+```
 ### Player
 A player is a human being which takes place in a game of Mafia. If the gamemaster wishes to hold a tournament, player profiles will collect the points the player has achieved during the tournament.
 - name: The last name of the player
@@ -124,4 +136,5 @@ A player is a human being which takes place in a game of Mafia. If the gamemaste
         <game id="1" points="2" character="Detective"/>
     </player>
 ```    
-### SaveGames
+### Game
+
