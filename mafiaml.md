@@ -4,12 +4,14 @@ This provides a unified XML standard for sharing Mafia decks among computers.
 The standard will be introduced in the following sections:
 ### Gameset
 MafiaML defines a gameset to include the following attributes:
-- A unique gameset id
-- The title of the gameset
-- Minimum amount of players possible
-- Maximum amount of players possible
-- Coverimage and back image of the card if available
-- Introtext and Outrotext for the gamemaster to announce a new round
+- gamesetid: A unique gameset id
+- title: The title of the gameset
+- fromPlayers: Minimum amount of players possible
+- toPlayers: Maximum amount of players possible
+- img:Coverimage 
+- backimg: Back image of the card if available
+- introtext: Introtext for the gamemaster to announce a new round
+- outrotext: Outrotext for the gamemaster to announce a new round
 ```xml
 <gameset gamesetid="56c7af97-9e68-4980-95d9-433933ff2326" title="Mafia"
 fromPlayers="0" toPlayers="0" img="de_mafia" backimg="back">
@@ -26,10 +28,11 @@ Every game of mafia consists of at least two factions which are eager to win the
 - id: A unique internally used group id
 - icon: An image file associated with the group
 - canwin: Indicates if the group can win the game or if members of the group need to change to another group in order to win the game
+- dietogether: Indicates if the members of the group are dying alltogether if one of their members is killed
 - description: A group description stating the groups intentions during the game
 ```xml
      <group name="Mafiosi" gid="M" id="7000902e-499c-489c-a3c5-6a3dcd3ca621"
-     icon="5e59e8af-709a-4ccd-be47-da2d8d32cc18" canwin="true">
+     icon="5e59e8af-709a-4ccd-be47-da2d8d32cc18" canwin="true" dietogether="false">
         <description>The Mafiosi win the game by killing all non-Mafiosi.</description>
     </group>
 ```
