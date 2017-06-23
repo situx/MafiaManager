@@ -112,8 +112,13 @@ Items can be used by players of the game in order to gain privileges during the 
   <item id="1" name="Hauptmannsorden"><description>Der Hauptmannsorden wird nach durchgeführter Wahl an den Hauptmann übergeben.</description></item>
   ```
 ### Events
+An event in Mafia occurs after a night has been terminated. It has a temporary of permanet effect on certain aspects of the game. Depending on the agreed rules, events occur at random or at the gamemasters' choice.
 
 ### Player
+A player is a human being which takes place in a game of Mafia. If the gamemaster wishes to hold a tournament, player profiles will collect the points the player has achieved during the tournament.
+- name: The last name of the player
+- firstname: The first name of the player
+- total: The number of points achieved during past games
 ```xml
     <player name="Obama" firstname="Barack" total="2">
         <game id="1" points="2" character="Detective"/>
