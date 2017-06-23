@@ -96,7 +96,9 @@ In the current version of MafiaML the following attributes have been defined:
         </action>
     </actions>
 ```
+### Items
 ### Events
+### SaveGames
 
 The gamesets provided in this Github repository do not include images of the gaming cards due to copyright reasons. I recommend the community to provide me with free to use images that I can include and/or encourage people who have bought official games to rely on those instead.
 ## MafiaManager App
