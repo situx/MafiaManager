@@ -12,6 +12,7 @@ MafiaML defines a gameset to include the following attributes:
 - backimg: Back image of the card if available
 - introtext: Introtext for the gamemaster to announce a new round
 - outrotext: Outrotext for the gamemaster to announce a new round
+
 ```xml
 <gameset gamesetid="56c7af97-9e68-4980-95d9-433933ff2326" title="Mafia"
 fromPlayers="0" toPlayers="0" img="de_mafia" backimg="back">
@@ -20,6 +21,7 @@ fromPlayers="0" toPlayers="0" img="de_mafia" backimg="back">
     <outrotext outrotitle="End of the night">A new day begins</outrotext>
 </gameset>
 ```
+
 The purpose of a gameset description is to describe metainformation about the set of cards being used and might be expanded in the future.
 ### Groups
 Every game of mafia consists of at least two factions which are eager to win the game. Usually those factions consist of at least the Mafiosi and the Citizens. In MafiaML, the following information about factions in the game are defined:
@@ -30,12 +32,14 @@ Every game of mafia consists of at least two factions which are eager to win the
 - canwin: Indicates if the group can win the game or if members of the group need to change to another group in order to win the game
 - dietogether: Indicates if the members of the group are dying alltogether if one of their members is killed
 - description: A group description stating the groups intentions during the game
+
 ```xml
      <group name="Mafiosi" gid="M" id="7000902e-499c-489c-a3c5-6a3dcd3ca621"
      icon="5e59e8af-709a-4ccd-be47-da2d8d32cc18" canwin="true" dietogether="false">
         <description>The Mafiosi win the game by killing all non-Mafiosi.</description>
     </group>
 ```
+
 ### Character Definition
 A character in a Mafia gameset defines the role of a player in the game. Roles may or may not be called at different times during the game to execute specific abilities in order to influence the flow of the game for their own or their groups interests. New character roles are defined frequently by online Mafia communities. It is therefore important to extract key attributes which many characters have in common in order to express as many characters definitions as possible in MafiaML. In its current version the following attributes have been defined:
 - cardid: A unique id for the character
@@ -56,6 +60,7 @@ A character in a Mafia gameset defines the role of a player in the game. Roles m
 - winningdead: The amount of points gained if the characters' group wins and the characters is already dead
 - balance: A balance value indicating a balance of good and evil characters (>0 good, <0 evil)
 - description: A description of the characters function in the game for the gamemaster to read
+
 ```xml
     <Karte cardid="87d0cb39-fd39-455a-9a85-2912f52addb4" name="Barkeeper" 
     group="M" round="0" img=" " minamount="1" maxamount="1" position="2" 
@@ -65,6 +70,7 @@ A character in a Mafia gameset defines the role of a player in the game. Roles m
 He wins along with the Mafiosi.</description>
 </Karte>
 ```
+
 ### Abilities
 Abilities can by used by characters in the game in order to influence the game for their interest. Abilities are subject to specific constraints, e.g. a limit amount of uses, a specific round to use the ability, or a force to use abilities on several time occasions.
 In the current version of MafiaML the following attributes have been defined:
@@ -98,6 +104,7 @@ In the current version of MafiaML the following attributes have been defined:
 - title: The title of the action
 - gamemaster: The action of the gamemaster to be taken during execution of the ability
 - player: The action the player needs to do in order to execute the ability
+
 ```xml
     <actions>
         <action id="1"  position="2" round="0" ondead="false" title="Choose victim">
@@ -106,6 +113,7 @@ In the current version of MafiaML the following attributes have been defined:
         </action>
     </actions>
 ```
+
 ### Items
 Items can be used by players of the game in order to gain privileges during the game. In essence items grant abilities temporarily or non-temporarily to characters and may or may not be unusable after their usage.
 ```xml
@@ -113,7 +121,7 @@ Items can be used by players of the game in order to gain privileges during the 
   <description>Der Hauptmannsorden wird nach 
   durchgeführter Wahl an den Hauptmann übergeben.</description>
   </item>
-  ```
+```
 ### Events
 An event in Mafia occurs after a night has been terminated. It has a temporary of permanet effect on certain aspects of the game. Depending on the agreed rules, events occur at random or at the gamemasters' choice.
 - active: Indicates if the event is currently active
