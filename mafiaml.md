@@ -11,8 +11,10 @@ MafiaML defines a gameset to include the following attributes:
 - Coverimage and back image of the card if available
 - Introtext and Outrotext for the gamemaster to announce a new round
 ```xml
-<gameset gamesetid="56c7af97-9e68-4980-95d9-433933ff2326" title="Mafia" fromPlayers="0" toPlayers="0" img="de_mafia" backimg="back">
-    <introtext introtitle="Beginning of the night">The night falls. All players go to sleep.</introtext>
+<gameset gamesetid="56c7af97-9e68-4980-95d9-433933ff2326" title="Mafia"
+fromPlayers="0" toPlayers="0" img="de_mafia" backimg="back">
+    <introtext introtitle="Beginning of the night">The night falls.
+    All players go to sleep.</introtext>
     <outrotext outrotitle="End of the night">A new day begins</outrotext>
 </gameset>
 ```
@@ -26,7 +28,8 @@ Every game of mafia consists of at least two factions which are eager to win the
 - canwin: Indicates if the group can win the game or if members of the group need to change to another group in order to win the game
 - description: A group description stating the groups intentions during the game
 ```xml
-     <group name="Mafiosi" gid="M" id="7000902e-499c-489c-a3c5-6a3dcd3ca621" icon="5e59e8af-709a-4ccd-be47-da2d8d32cc18" canwin="true">
+     <group name="Mafiosi" gid="M" id="7000902e-499c-489c-a3c5-6a3dcd3ca621"
+     icon="5e59e8af-709a-4ccd-be47-da2d8d32cc18" canwin="true">
         <description>The Mafiosi win the game by killing all non-Mafiosi.</description>
     </group>
 ```
@@ -77,13 +80,21 @@ In the current version of MafiaML the following attributes have been defined:
 - self: Indicates if the ability can be used on the player executing the ability
 - #text: A name for the ability
 ```xml
-<abb active="true" amount="1" availablefrom="1" availableuntil="-1" probability="100" img="jailguard" everyround="true" concerns="1" mustuse="false" duration="1" killing="false" counterKilling="false" self="false">Choose victim</abb>
+<abb active="true" amount="1" availablefrom="1" availableuntil="-1"
+probability="100" img="jailguard" everyround="true" concerns="1"
+mustuse="false" duration="1" killing="false" counterKilling="false"
+self="false">Choose victim</abb>
 ```
 ### Actions
 Actions are hints for the game master to explain his role when an ability is executed during the game. The gamemaster often needs to keep track of various things during the game and is often the cause of criticism if important aspects of the game have been forgotten.
 In the current version of MafiaML the following attributes have been defined:
 - id: An id for the action
-- position: 
+- position: The position of the action to be executed
+- round: The round in which this action is executed (0=every round)
+- ondead: Indicates if the action is to be executed when the character dies
+- title: The title of the action
+- gamemaster: The action of the gamemaster to be taken during execution of the ability
+- player: The action the player needs to do in order to execute the ability
 ```xml
     <actions>
         <action id="1"  position="2" round="0" ondead="false" title="Choose victim">
@@ -93,5 +104,16 @@ In the current version of MafiaML the following attributes have been defined:
     </actions>
 ```
 ### Items
+Items can be used by players of the game in order to gain privileges during the game. In essence items grant abilities temporarily or non-temporarily to characters and may or may not be unusable after their usage.
+```xml
+  <item id="1" name="Hauptmannsorden"><description>Der Hauptmannsorden wird nach durchgeführter Wahl an den Hauptmann übergeben.</description></item>
+  ```
 ### Events
+
+### Player
+```xml
+    <player name="Obama" firstname="Barack" total="2">
+        <game id="1" points="2" character="Detective"/>
+    </player>
+```    
 ### SaveGames
