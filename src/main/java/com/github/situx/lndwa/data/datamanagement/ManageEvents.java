@@ -19,8 +19,8 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Locale;
 
-import com.example.LNDWA.cards.Event;
-import com.example.LNDWA.cards.GameElements;
+import com.github.situx.lndwa.cards.Event;
+import com.github.situx.lndwa.cards.GameElements;
 import com.github.situx.lndwa.cards.GameSet;
 
 import com.github.situx.lndwa.data.Data;

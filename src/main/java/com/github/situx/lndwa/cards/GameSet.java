@@ -15,10 +15,10 @@
  *******************************************************************************/
 package com.github.situx.lndwa.cards;
 
+import com.github.situx.lndwa.util.parser.CharParse;
 import com.github.situx.lndwa.util.parser.PresetParse;
 import org.xml.sax.SAXException;
 
-import com.example.LNDWA.util.parser.CharParse;
 import com.google.gson.Gson;
 
 import javax.xml.bind.annotation.XmlAttribute;

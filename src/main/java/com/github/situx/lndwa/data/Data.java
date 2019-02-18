@@ -51,6 +51,8 @@ import javax.xml.transform.TransformerFactoryConfigurationError;
 import javax.xml.transform.sax.SAXResult;
 import javax.xml.transform.stream.StreamSource;
 
+import com.github.situx.lndwa.cards.Competition;
+
 import org.apache.commons.io.output.ByteArrayOutputStream;
 import org.apache.fop.apps.FOPException;
 import org.apache.fop.apps.FOUserAgent;
@@ -60,13 +62,11 @@ import org.apache.fop.apps.MimeConstants;
 import org.apache.xalan.processor.TransformerFactoryImpl;
 import org.xml.sax.SAXException;
 
-import com.example.LNDWA.cards.Competition;
-import com.example.LNDWA.cards.Game;
 import com.github.situx.lndwa.cards.GameSet;
 import com.github.situx.lndwa.cards.Player;
 import com.github.situx.lndwa.cards.Preset;
 import com.github.situx.lndwa.util.parser.GameResultParser;
-import com.example.LNDWA.util.parser.PlayerParse;
+import com.github.situx.lndwa.util.parser.PlayerParse;
 import com.github.situx.lndwa.util.parser.UserParse;
 import com.google.gson.Gson;
 

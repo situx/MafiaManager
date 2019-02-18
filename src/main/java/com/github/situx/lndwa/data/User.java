@@ -22,7 +22,7 @@ import javax.xml.stream.XMLOutputFactory;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamWriter;
 
-import com.example.LNDWA.cards.GameElements;
+import com.github.situx.lndwa.cards.GameElements;
 import com.google.gson.Gson;
 
 public class User implements GameElements,Comparable<User>{

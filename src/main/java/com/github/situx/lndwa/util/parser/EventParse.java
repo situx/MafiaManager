@@ -15,11 +15,12 @@
  *******************************************************************************/
 package com.github.situx.lndwa.util.parser;
 
-import com.example.LNDWA.cards.Event;
 import org.xml.sax.Attributes;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
+
+import com.github.situx.lndwa.cards.Event;
 
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParserFactory;

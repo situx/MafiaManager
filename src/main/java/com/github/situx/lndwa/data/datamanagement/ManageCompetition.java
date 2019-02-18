@@ -20,9 +20,8 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.TreeSet;
 
-import com.example.LNDWA.cards.Competition;
-import com.example.LNDWA.cards.GameElements;
-
+import com.github.situx.lndwa.cards.Competition;
+import com.github.situx.lndwa.cards.GameElements;
 import com.github.situx.lndwa.data.Data;
 
 public class ManageCompetition implements ManageGameElement {

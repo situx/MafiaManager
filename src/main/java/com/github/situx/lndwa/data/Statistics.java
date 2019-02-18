@@ -57,7 +57,7 @@ public class Statistics {
 			return 0;
 		}
 		for(GameResult result:this.gameresults){
-			for(com.example.LNDWA.cards.Game gam:result.game){
+			for(com.github.situx.lndwa.cards.Game gam:result.game){
 				avgpoints+=gam.points;
 			}
 		}
@@ -70,7 +70,7 @@ public class Statistics {
 			return 0;
 		}
 		for(GameResult result:this.competitionresults.get(competition).getGameresults()){
-			for(com.example.LNDWA.cards.Game gam:result.game){
+			for(com.github.situx.lndwa.cards.Game gam:result.game){
 				avgpoints+=gam.points;
 			}
 		}
@@ -80,7 +80,7 @@ public class Statistics {
 	public Map<String,Integer> getMostUsedCharsForCompetition(String competition){
 		Map<String,Integer> usedchars=new TreeMap<>();
 		for(GameResult result:this.competitionresults.get(competition).getGameresults()){
-			for(com.example.LNDWA.cards.Game gam:result.game){
+			for(com.github.situx.lndwa.cards.Game gam:result.game){
 				if(!usedchars.containsKey(gam.character)){
 					usedchars.put(gam.character.getName(), 0);
 				}
@@ -93,7 +93,7 @@ public class Statistics {
 	public Map<String,Integer> getMostUsedChars(){
 		Map<String,Integer> usedchars=new TreeMap<>();
 		for(GameResult result:this.gameresults){
-			for(com.example.LNDWA.cards.Game gam:result.game){
+			for(com.github.situx.lndwa.cards.Game gam:result.game){
 				if(!usedchars.containsKey(gam.character)){
 					usedchars.put(gam.character.getName(), 0);
 				}

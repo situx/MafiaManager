@@ -28,12 +28,12 @@ import javax.xml.stream.XMLOutputFactory;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamWriter;
 
-import com.example.LNDWA.cards.GameElements;
 import com.github.situx.lndwa.cards.Card;
+import com.github.situx.lndwa.cards.GameElements;
 import com.github.situx.lndwa.cards.GameSet;
 import com.github.situx.lndwa.cards.Group;
 import com.google.gson.Gson;
-import com.example.LNDWA.cards.Game;
+import com.github.situx.lndwa.cards.Game;
 
 import com.github.situx.lndwa.Utils.Tuple;
 

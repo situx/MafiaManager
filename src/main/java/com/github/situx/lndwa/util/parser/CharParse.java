@@ -15,13 +15,18 @@
  *******************************************************************************/
 package com.github.situx.lndwa.util.parser;
 
-import com.example.LNDWA.cards.*;
-
 import org.xml.sax.Attributes;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 import org.xml.sax.SAXParseException;
 import org.xml.sax.helpers.DefaultHandler;
+
+import com.github.situx.lndwa.cards.Ability;
+import com.github.situx.lndwa.cards.Action;
+import com.github.situx.lndwa.cards.Card;
+import com.github.situx.lndwa.cards.Event;
+import com.github.situx.lndwa.cards.Group;
+import com.github.situx.lndwa.cards.Operator;
 
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParserFactory;
@@ -104,7 +109,7 @@ public class CharParse extends DefaultHandler {
     /**
      * The list of cards to be returned.*
      */
-    private transient List<Karte> cardlist;
+    private transient List<Card> cardlist;
     private Boolean wakesupw=false;
     private Set<String> wakesupwith;
     private List<Group> changeGroup;
@@ -275,7 +280,7 @@ public class CharParse extends DefaultHandler {
         this.backimg = backimg;
     }
 
-    public List<Karte> getCardList() {
+    public List<Card> getCardList() {
         return this.cardlist;
     }
 
@@ -325,8 +330,8 @@ public class CharParse extends DefaultHandler {
      * @return the new character
      * @throws IOException
      */
-    Karte neueKarte() {
-        return new Karte(this.name, this.cardid, this.round, this.group, this.descriptiontext, this.abilities,
+    Card neueKarte() {
+        return new Card(this.name, this.cardid, this.round, this.group, this.descriptiontext, this.abilities,
                 this.depends, this.image, this.position, this.minamount, this.maxamount, this.position2, this.extra, this.fixeddeath,
                 this.nopoints, this.calleveryone, this.deadchars, this.winsalone, this.winningalive, this.winningdead,
                 this.balance,this.deathdelay,this.actionlist,this.wakesupwith);
@@ -338,7 +343,7 @@ public class CharParse extends DefaultHandler {
      * @param file the file to parse
      * @return the parsed cardlist
      */
-    public List<Karte> parseChars(final File file) {
+    public List<Card> parseChars(final File file) {
         try {
             SAXParserFactory.newInstance().newSAXParser().parse(file, this);
         } catch (SAXException e) {
@@ -357,7 +362,7 @@ public class CharParse extends DefaultHandler {
      * @param fileName the name of the file to be parsed.
      * @return the list of characters.*
      */
-    public List<Karte> parseChars(final InputSource fileName) {
+    public List<Card> parseChars(final InputSource fileName) {
         try {
             SAXParserFactory.newInstance().newSAXParser().parse(fileName, this);
         } catch (SAXException e) {

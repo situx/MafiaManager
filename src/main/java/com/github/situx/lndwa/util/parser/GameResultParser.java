@@ -27,9 +27,8 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.ext.DefaultHandler2;
 
-import com.example.LNDWA.cards.Game;
-
 import com.github.situx.lndwa.Utils.Tuple;
+import com.github.situx.lndwa.cards.Game;
 import com.github.situx.lndwa.data.GameResult;
 import com.github.situx.lndwa.data.datamanagement.ManageCards;
 import com.github.situx.lndwa.data.datamanagement.ManageGameSets;

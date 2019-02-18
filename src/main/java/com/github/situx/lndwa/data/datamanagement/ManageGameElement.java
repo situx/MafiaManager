@@ -17,7 +17,7 @@ package com.github.situx.lndwa.data.datamanagement;
 
 import java.util.List;
 
-import com.example.LNDWA.cards.GameElements;
+import com.github.situx.lndwa.cards.GameElements;
 
 public interface ManageGameElement {
 	

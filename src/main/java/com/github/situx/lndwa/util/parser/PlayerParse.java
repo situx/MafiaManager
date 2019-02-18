@@ -15,7 +15,7 @@
  *******************************************************************************/
 package com.github.situx.lndwa.util.parser;
 
-import com.example.LNDWA.cards.Game;
+import com.github.situx.lndwa.cards.Game;
 import com.github.situx.lndwa.cards.Player;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;

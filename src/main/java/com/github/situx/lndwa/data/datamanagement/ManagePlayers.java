@@ -21,7 +21,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
 
-import com.example.LNDWA.cards.GameElements;
+import com.github.situx.lndwa.cards.GameElements;
 import com.github.situx.lndwa.cards.Player;
 
 import com.github.situx.lndwa.data.Data;

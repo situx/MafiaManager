@@ -16,7 +16,8 @@
 package com.github.situx.lndwa.data.datamanagement;
 
 import java.util.Map;
-import com.example.LNDWA.cards.Action;
+
+import com.github.situx.lndwa.cards.Action;
 import com.github.situx.lndwa.cards.Card;
 import com.github.situx.lndwa.cards.GameSet;
 

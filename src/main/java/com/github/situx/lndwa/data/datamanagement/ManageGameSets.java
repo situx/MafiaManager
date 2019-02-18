@@ -19,7 +19,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-import com.example.LNDWA.cards.GameElements;
+import com.github.situx.lndwa.cards.GameElements;
 import com.github.situx.lndwa.cards.GameSet;
 
 import com.github.situx.lndwa.Utils.Tuple;
