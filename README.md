@@ -1,5 +1,7 @@
 # MafiaManager
 
+[![Build Status](https://travis-ci.com/situx/MafiaManager.svg?branch=master)](https://travis-ci.com/situx/MafiaManager)
+
 MafiaManager is an Android app and an accompanying web application for creating, managing, and playing roleplaying games that follow the ruleset of the popular game Mafia.
 
 ## MafiaML
